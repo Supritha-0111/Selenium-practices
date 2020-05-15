@@ -1,19 +1,20 @@
 Feature: Application Login 
 
-
+@MobileTest
 Scenario: Home page default login
 Given User is on Netbanking landing page
 When User login into application with username "Jilly" and password "1234"
 Then Home page is populated
 And Cards are displayed
 
-
+@RegTest
 Scenario: Home page default login
 Given User is on Netbanking landing page
 When User login into application with username "Jhonjjj" and password "1234fgf"
 Then Home page is populated
 And Cards are displayed
 
+@RegTest
 Scenario: Home page default login
 Given User is on Netbanking landing page
 When User sign up with following details
@@ -21,6 +22,7 @@ When User sign up with following details
 Then Home page is populated
 And Cards are displayed
 
+@MobileTest
 Scenario Outline: Home page default login
 Given User is on Netbanking landing page
 When User login in to application with <username> and <password>

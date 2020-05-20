@@ -20,7 +20,7 @@ public class stepDefinition {
     	System.out.println("LOgging in to account");
     }
 
-    @Then("^Home page is populated$")
+   @Then("^Home page is populated$")
     public void home_page_is_populated() throws Throwable {
     	System.out.println("Home page is displayed");
     }
